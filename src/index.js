@@ -4,21 +4,24 @@ import "./index.css";
 import App from "./App";
 import { makeServer } from "./server";
 import { BrowserRouter } from "react-router-dom";
-import { AuthProvider } from "./context/AuthContext";
 import { NoteProvider } from "./context/NoteContext";
+import { AuthProvider } from "./context/AuthContext";
+import { FormProvider } from "./context/FormContext";
 
 // Call make Server
 makeServer();
 
 ReactDOM.render(
   <React.StrictMode>
+    <NoteProvider>
       <AuthProvider>
-          <NoteProvider>
-            <BrowserRouter>
-              <App />
-            </BrowserRouter>
-          </NoteProvider>
+        <FormProvider>
+          <BrowserRouter>
+            <App />
+          </BrowserRouter>
+        </FormProvider>  
       </AuthProvider>
+    </NoteProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );
