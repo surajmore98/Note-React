@@ -1,0 +1,30 @@
+@import url("https://charcoalxui.netlify.app/src/style/style.css");
+@import url("./style/variable.css");
+
+.note-container {
+  padding: 2rem 3rem;
+  display: flex;
+  position: relative;
+  min-height: calc(100vh - 7.5rem);
+}
+
+.primary {
+  color: var(--primary);
+}
+
+.secondary {
+  color: var(--secondary);
+}
+
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.bg-secondary {
+  background-color: var(--secondary);
+}
+
+.pointer {
+  cursor: pointer;
+  vertical-align: middle;
+}
