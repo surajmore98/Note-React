@@ -1,0 +1,110 @@
+@import url("./variable.css");
+@import url("./flex.css");
+@import url("./pop-up.css");
+
+.add-note-wrapper {
+    width: auto;
+    max-height: 15rem;
+    border-radius: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+}
+
+.add-note-wrapper input,
+.add-note-wrapper textarea {
+    outline: none;
+    border: none;
+    width: auto;
+    padding: 0.5rem;
+    display: block;
+    background: transparent;
+    color: var(--charcoal-black);
+}
+
+.input-container {
+    padding: 0.5rem;
+    padding-bottom: 0;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.add-note-action {
+  padding: 0.5rem;
+  height: 2rem;
+  position: relative;
+  gap: 1rem;
+}
+
+.text-area {
+    flex: 1 1 auto;
+    resize: none;
+    font-family: 'Roboto';
+    letter-spacing: 0.75px;
+}
+
+.color-list {
+    width: auto;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    border: 1px solid var(--charcoal-black-light);
+    border-radius: 0.25rem;
+    top: 3rem;
+    position: absolute;
+}
+
+.color-list .btn-round {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.label-list {
+    color: var(--charcoal-black);
+    border: 1px solid var(--charcoal-black-light);
+    top: 1.5rem;
+    left: 2rem;
+    position: absolute;
+    max-height: 10rem;
+    max-width: 10rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 1;
+}
+
+.label-list li {
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.label-list li:hover {
+    background-color: var(--charcoal-white);
+    font-weight: 700;
+}
+
+.chip {
+    border-radius: 1.5rem;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    background-color: transparent;
+}
+
+.chip-black-border {
+    border: 0.5px solid var(--charcoal-black);
+}
+
+.chip-white-border {
+    border: 0.5px solid var(--white);
+}
+
+.note-action {
+    background: transparent;
+}
+
+.note-action:hover {
+    background-color: var(--charcoal-white);
+}
