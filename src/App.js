@@ -5,8 +5,10 @@ import 'react-toastify/dist/ReactToastify.min.css';
 import { Loader, Toast } from "./component/Components";
 import { enableInterceptor } from "./axios/LoaderService.js";
 import { Home, Login, Register, Logout } from "./page/page";
+import { useNote } from "./context/NoteContext";
 
-function App() {  
+function App() {
+  const { loading } = useNote();
   enableInterceptor();
   
   return (

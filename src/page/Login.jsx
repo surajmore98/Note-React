@@ -72,11 +72,10 @@ export const Login = () => {
                                 </label>
                                 <a className="font-lg secondary">Forgot Password</a>
                             </div>
-                            
                         </div>
                         <button className="btn btn-full product-btn bg-primary charcoal-black p-md font-bold" type="submit">Login</button> 
+                        <button className="btn btn-full product-btn bg-secondary charcoal-black p-md font-bold" onClick={navigateToRegister}>Create New Account </button> 
                     </form>
-                    <button className="btn btn-full product-btn bg-secondary charcoal-black p-md font-bold" onClick={navigateToRegister}>Create New Account </button> 
                 </div>
             </div>
         </div>
