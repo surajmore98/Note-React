@@ -1,0 +1,68 @@
+.register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: stretch;
+    gap: 1rem;
+    background-color: var(--white);
+    color: var(--charcoal-black);
+    padding: 1rem 2rem;
+}
+
+.register-content {
+    font-size: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.register .header {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+.register .form-field {
+    width: 100%;
+}
+
+.register .form-control {
+    width: 95%;
+}
+
+.form-field-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.register .form-field-horizontal {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.input-label {
+    font-size: 0.875rem;
+}
+
+.register .input {
+    border: none;
+    border-radius: 0;
+}
+
+.register-checkbox-label {
+    padding-right: 4rem;
+}
+
+.register .btn-full {
+    width: 100%;
+    border-radius: 0;
+}

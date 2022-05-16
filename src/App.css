@@ -1,0 +1,23 @@
+@import url("https://charcoalxui.netlify.app/src/style/style.css");
+@import url("./style/variable.css");
+
+.primary {
+  color: var(--primary);
+}
+
+.secondary {
+  color: var(--secondary);
+}
+
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.bg-secondary {
+  background-color: var(--secondary);
+}
+
+.pointer {
+  cursor: pointer;
+  vertical-align: middle;
+}

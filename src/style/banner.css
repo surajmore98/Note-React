@@ -1,0 +1,58 @@
+.banner {
+    width: auto;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.banner-content {
+    padding-left: 4rem;
+    display: flex;
+    background: transparent;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.banner-content-header {
+    font-size: 3.5rem;
+    line-height: 4rem;
+    font-weight: 900;
+}
+
+.banner-content-info .header {
+    font-size: 2rem;
+    line-height: 3.25rem;
+    font-weight: 700;
+}
+
+.banner-content-info .detail {
+    font-size: 1.25rem;
+    line-height: 2rem;
+    font-weight: 400;
+}
+
+.banner-action .btn,
+.banner-action p {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.link {
+    text-decoration: underline;
+}
+
+.image {
+    object-fit: scale-down;
+}
+
+@media only screen and (max-width: 700px) {
+    .banner .image {
+        display: none;
+    }
+    
+    .banner {
+        grid-template-columns: 1fr;
+    }
+}
