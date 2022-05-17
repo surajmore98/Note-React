@@ -1,0 +1,120 @@
+.side-nav {
+    width: 15rem;
+    padding: 1rem;
+}
+
+.side-nav-list {
+    padding-bottom: 1rem;
+}
+
+.list-item {
+    display: block;
+    width: auto;
+    padding: 0.5rem;
+    padding-left: 0;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    cursor: pointer;
+    display: flex;
+}
+
+.list-item-active {
+    font-weight: 900;
+    color: var(--secondary);
+}
+
+.list-item:hover {
+    background-color: var(--charcoal-black-light);
+}
+
+.list-item-title {
+    padding-top: 0.3rem;
+    padding-left: 0.3rem;
+}
+
+.side-nav-action {
+    width: 100%;
+    padding: 0.5rem;
+    text-align: center;
+    background-color: var(--primary);
+    color: var(--white);
+    border: none;
+    font-weight: 700;
+    font-size: 0.875rem;
+    cursor: pointer;
+}
+
+.note-list {
+    display: flex;
+    flex: 1 1 auto;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.search-bar {
+    display: inline-flex;
+    position: relative;
+    height: 2.5rem;
+    min-width: 50%;
+    font-size: 1.5rem;
+}
+
+.search-bar .icon {
+    position: absolute;
+    top: 0.5rem;
+}
+
+.left {
+    left: 0.5rem;
+}
+
+.right {
+    right: 0.5rem;
+}
+
+.cancel {
+    right: 2rem;
+}
+
+.search-bar .search-input {
+    border: none;
+    outline: none;
+    border-radius: 0;
+    padding: 0.5rem 3.5rem;
+    font-size: 1rem;
+    background-color: var(--white);
+}
+
+.note-group {
+    width: 50%;
+    padding: 1rem;
+}
+
+@media only screen and (max-width: 900px) {
+    .mote-container {
+        padding: 2rem;
+    }
+
+    .search-bar {
+        min-width: 65%;
+    }
+    
+    .note-group {
+        width: 65%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .note-container {
+        padding: 2rem;
+    }
+
+    .search-bar {
+        min-width: 80%;
+    }
+    
+    .note-group {
+        width: 80%;
+    }
+}
