@@ -21,3 +21,10 @@
   cursor: pointer;
   vertical-align: middle;
 }
+
+.note-container {
+  padding: 2rem 3rem;
+  display: flex;
+  position: relative;
+  min-height: calc(100vh - 7.5rem);
+}
