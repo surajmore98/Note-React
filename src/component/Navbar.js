@@ -15,7 +15,7 @@ export const Navbar = () => {
                 </div>
             </div>
             {
-                auth && auth.isAuth &&
+                (auth && auth.isAuth) &&
                 <div className="nav-action">
                     <span className="charcoal-black pr-md">{ user.name }</span>
                     <button className="btn btn-round bg-primary white" onClick={navigateToLogout}><MdLogout size={20}/></button>

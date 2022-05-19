@@ -70,7 +70,7 @@ export const Login = () => {
                                     <input type="checkbox" ref={remeberMeRef}/>
                                     <span className="input-label register-checkbox-label">Remember me</span>
                                 </label>
-                                <a className="font-lg secondary">Forgot Password</a>
+                                <a className="font-lg secondary"> </a>
                             </div>
                         </div>
                         <button className="btn btn-full product-btn bg-primary charcoal-black p-md font-bold" type="submit">Login</button> 
