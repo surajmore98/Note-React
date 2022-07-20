@@ -1,7 +1,7 @@
 import { MdHome, MdOutlineLabel, MdOutlineArchive, MdOutlineRestoreFromTrash, MdPersonOutline } from "react-icons/md";
 import { useNavigator } from "../utility/UseNavigator";
 import { useForm } from "../context/FormContext";
-import "../style/notes.css"
+import "../style/notes.css";
 import { Modules } from "../utility/Modules";
 
 export const SideNav = ({ current }) => {
@@ -29,10 +29,6 @@ export const SideNav = ({ current }) => {
                     <MdOutlineRestoreFromTrash size={30}/>
                     <span className="list-item-title">Trash</span>
                 </li>
-                {/* <li className={`list-item semi-bold charcoal-black ${current === Modules.NOTES ? 'list-item-active' : ''}`}">
-                    <MdPersonOutline size={30}/>
-                    <span className="list-item-title">Profile</span>
-                </li> */}
             </ul>
             <button className="side-nav-action" onClick={openAddNoteForm}>Create Note</button>
         </div>
