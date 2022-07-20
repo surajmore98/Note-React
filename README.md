@@ -1,8 +1,7 @@
     ## NOTE 
-    [Charcoalnote](https://charcoalnote.netlify.app/)
-
-    This is note web app for shoes built using React, Javascript, HTML, CSS and [mockbee](https://mockbee.netlify.app/) Mock API.
-
+    note web app built using React, Javascript, HTML, CSS and [mockbee](https://mockbee.netlify.app/) Mock API.
+    [Charcoalnote](https://charcoalnote.netlify.app)
+    
     ### Features:
     - Add a new note
 
